@@ -28,12 +28,6 @@ const TablePagination = ({ paginationItems, setActivePage, activePage, itemsPerP
                         <Pagination.First disabled={activePage === 1} onClick={handleFirst} />
                         <Pagination.Prev disabled={activePage === 1} onClick={handlePrev} />
                         {
-                            // paginationItems.length > 3 ? (
-                            //     paginationItems.map(pg => (
-                            //         pg.key >= activePage - 2 ?
-                            //         <Pagination.Item key={pg.key} active={pg.active} onClick={() => setActivePage(pg.key)}>{pg.key}</Pagination.Item> : null
-                            //     ))
-                            // ) :
                             paginationItems.map(pg => (
                                 <Pagination.Item key={pg.key} active={pg.active} onClick={() => setActivePage(pg.key)}>{pg.key}</Pagination.Item>
                             ))
