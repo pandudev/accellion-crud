@@ -24,7 +24,11 @@ export const addUser = (user) => {
         var errorMessage = err.message;
 
         NotificationManager.error(errorMessage, errorCode);
+
+        return false;
     });
+
+    return true;
 }
 
 export const updateUser = (user) => {
@@ -44,9 +48,12 @@ export const updateUser = (user) => {
                 var errorMessage = err.message;
 
                 NotificationManager.error(errorMessage, errorCode);
+                return false;
             });
         }
     })
+
+    return true;
 
 }
 
@@ -61,7 +68,10 @@ export const deleteUser = (id) => {
                 var errorMessage = err.message;
 
                 NotificationManager.error(errorMessage, errorCode);
+                return false;
             });
         }
     })
+    
+    return true;
 }

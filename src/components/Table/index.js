@@ -14,30 +14,30 @@ const TablePagination = ({ paginationItems, setActivePage, activePage, itemsPerP
     const itemsPerPageArr = [5, 10, 20];
 
     return (
-            <div className="w-100 d-flex justify-content-between">
-                <span>{`Page ${activePage} of ${paginationItems.length}`}</span>
-                <div className="d-flex">
-                    <DropdownButton className='mr-3' id="dropdown-basic-button" title={`Show ${itemsPerPage} data`}>
-                        {
-                            itemsPerPageArr.map((val, i) => (
-                                <Dropdown.Item onClick={() => handleChangeItemsPerPage(val)}>{val}</Dropdown.Item>
-                            ))
-                        }
-                    </DropdownButton>
-                    <Pagination size='md'>
-                        <Pagination.First disabled={activePage === 1} onClick={handleFirst} />
-                        <Pagination.Prev disabled={activePage === 1} onClick={handlePrev} />
-                        {
-                            paginationItems.map(pg => (
-                                <Pagination.Item key={pg.key} active={pg.active} onClick={() => setActivePage(pg.key)}>{pg.key}</Pagination.Item>
-                            ))
-                        }
-                        <Pagination.Next disabled={activePage === paginationItems.length} onClick={handleNext} />
-                        <Pagination.Last disabled={activePage === paginationItems.length} onClick={handleLast} />
-                    </Pagination>
+        <div className="w-100 d-flex justify-content-between">
+            <span>{`Page ${activePage} of ${paginationItems.length}`}</span>
+            <div className="d-flex">
+                <DropdownButton className='mr-3' id="dropdown-basic-button" title={`Show ${itemsPerPage} data`}>
+                    {
+                        itemsPerPageArr.map((val, i) => (
+                            <Dropdown.Item key={i} onClick={() => handleChangeItemsPerPage(val)}>{val}</Dropdown.Item>
+                        ))
+                    }
+                </DropdownButton>
+                <Pagination size='md'>
+                    <Pagination.First disabled={activePage === 1} onClick={handleFirst} />
+                    <Pagination.Prev disabled={activePage === 1} onClick={handlePrev} />
+                    {
+                        paginationItems.map(pg => (
+                            <Pagination.Item key={pg.key} active={pg.active} onClick={() => setActivePage(pg.key)}>{pg.key}</Pagination.Item>
+                        ))
+                    }
+                    <Pagination.Next disabled={activePage === paginationItems.length} onClick={handleNext} />
+                    <Pagination.Last disabled={activePage === paginationItems.length} onClick={handleLast} />
+                </Pagination>
 
-                </div>
             </div>
+        </div>
 
     )
 }
@@ -65,15 +65,12 @@ const TableHead = ({ column, handleHeaderClick, isAscending }) => {
 
 const TableRow = ({ data, handleEditButton, handleDeleteButton }) => {
     return (
-        <tr key={data.id} className='tbl-row' onClick={() => handleEditButton(data)}>
-            <td className="align-middle">{data.username}</td>
+        <tr key={data.id} className='tbl-row'>
+            <td className="align-middle"><span className="action text-primary" onClick={() => handleEditButton(data)}>{data.username}</span></td>
             <td className="align-middle">{data.email}</td>
-            <td className="align-middle">{data.score}</td>
+            <td className="align-middle text-right">{data.score}</td>
             <td className="align-middle">{data.registered}</td>
             <td className="action">
-                <Button variant="link" onClick={() => handleEditButton(data)}>
-                    <FontAwesomeIcon icon={faPencilAlt} />
-                </Button>
                 <Button variant="link" onClick={() => handleDeleteButton(data)}>
                     <FontAwesomeIcon icon={faTrashAlt} />
                 </Button>

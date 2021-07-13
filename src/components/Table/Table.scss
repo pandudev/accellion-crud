@@ -1,5 +1,9 @@
 tr.tbl-row {
-    cursor: pointer;
+
+    & .action {
+        cursor: pointer;
+    }
+
     &:hover {
 
         & > td.action {
@@ -16,6 +20,7 @@ tr.tbl-row {
 
 thead > tr > th {
     cursor: pointer;
+    text-align: center;
 
     &:hover {
         .sort {

@@ -1,12 +1,10 @@
 import React from 'react'
 import { useEffect } from 'react'
 import { useState } from 'react'
-import { Button, Modal as BSModal, ModalBody, ModalFooter, ModalTitle } from 'react-bootstrap'
-import ModalHeader from 'react-bootstrap/esm/ModalHeader'
+import { Button, Modal as BSModal} from 'react-bootstrap'
 import Form, { Input } from '../Form'
 
 const Modal = ({ isShow, closeModal, isDelete, data, formSubmit, deleteData }) => {
-
 
     const title = isDelete ? 'Confirm Delete' : 'User Form';
     const [disabled, setDisabled] = useState(!isDelete);
@@ -32,10 +30,10 @@ const Modal = ({ isShow, closeModal, isDelete, data, formSubmit, deleteData }) =
 
     return (
         <BSModal show={isShow} onHide={closeModal} >
-            <ModalHeader closeButton>
-                <ModalTitle>{title}</ModalTitle>
-            </ModalHeader>
-            <ModalBody>
+            <BSModal.Header closeButton>
+                <BSModal.Title>{title}</BSModal.Title>
+            </BSModal.Header>
+            <BSModal.Body>
                 {
                     isDelete ? `Are you sure to delete ${data.username} data?` : (
                         <Form onSubmit={onSubmit} defaultValues={data} setDisable={handleDisable}>
@@ -46,11 +44,11 @@ const Modal = ({ isShow, closeModal, isDelete, data, formSubmit, deleteData }) =
                         </Form>
                     )
                 }
-            </ModalBody>
-            <ModalFooter>
+            </BSModal.Body>
+            <BSModal.Footer>
                 <Button variant="secondary" onClick={closeModal}>Cancel</Button>
                 <Button variant="primary" disabled={disabled} onClick={handleSubmit}>{isDelete ? 'Delete' : 'Save Changes'}</Button>
-            </ModalFooter>
+            </BSModal.Footer>
         </BSModal>
     )
 }
