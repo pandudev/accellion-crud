@@ -1,0 +1,29 @@
+tr.tbl-row {
+
+    &:hover {
+
+        & > td.action {
+            opacity: 1;
+        }
+    }
+
+    & > td.action {
+        text-align: center;
+        opacity: 0;
+        transition: opacity .3s ease-in-out;
+    }
+}
+
+thead > tr > th {
+    cursor: pointer;
+
+    &:hover {
+        .sort {
+            opacity: 1;
+        }
+    }
+
+    .sort {
+        opacity: 0;
+    }
+}
