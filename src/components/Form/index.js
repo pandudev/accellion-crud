@@ -39,12 +39,12 @@ const Form = ({ defaultValues, children, onSubmit, setDisable }) => {
     )
 }
 
-export const Input = ({ register, name, ...rest }) => {
+export const Input = ({ register, name, feedback, ...rest }) => {
     return (
         <BSForm.Group>
             <BSForm.Control {...register(name)} {...rest} />
             <BSForm.Control.Feedback type="invalid">
-                {`Please provide a valid ${name}`}
+                {feedback}
             </BSForm.Control.Feedback>
         </BSForm.Group>
     );

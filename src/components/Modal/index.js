@@ -39,9 +39,9 @@ const Modal = ({ isShow, closeModal, isDelete, data, formSubmit, deleteData }) =
                         <p>Are you sure to delete <strong>{data.username}</strong> data?</p>
                     ) : (
                         <Form onSubmit={onSubmit} defaultValues={data} setDisable={handleDisable}>
-                            <Input required type="text" placeholder="User Name" name="username" />
-                            <Input required type="email" placeholder="User Email" name="email" />
-                            <Input required type="number" min={0} placeholder="User Score" name="score" />
+                            <Input required type="text" placeholder="User Name" name="username" feedback={"Please provide a valid username"} />
+                            <Input required type="email" placeholder="User Email" name="email" feedback={"Please provide a valid email"} />
+                            <Input required type="number" min={0} max={100} placeholder="User Score" name="score" feedback={"Score must between 0 to 100"} />
                             <Button hidden id="formButton" type="submit">Submit</Button>
                         </Form>
                     )
