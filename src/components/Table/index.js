@@ -134,7 +134,7 @@ const Table = ({ columns, data, editAction, deleteAction }) => {
 
     return (
         <Fragment>
-            <BSTable responsive striped bordered hover size="sm">
+            <BSTable responsive bordered hover size="sm">
                 <thead>
                     <tr>
                         {

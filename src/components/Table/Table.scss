@@ -1,11 +1,12 @@
 tr.tbl-row {
+    transition: all .3s ease-in-out;
 
     & .action {
         cursor: pointer;
     }
 
     &:hover {
-
+        background-color: #ededed !important;
         & > td.action {
             opacity: 1;
         }

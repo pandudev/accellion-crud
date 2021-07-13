@@ -1,7 +1,7 @@
 import React from 'react'
 import { useEffect } from 'react'
 import { useState } from 'react'
-import { Button, Modal as BSModal} from 'react-bootstrap'
+import { Button, Modal as BSModal } from 'react-bootstrap'
 import Form, { Input } from '../Form'
 
 const Modal = ({ isShow, closeModal, isDelete, data, formSubmit, deleteData }) => {
@@ -10,7 +10,7 @@ const Modal = ({ isShow, closeModal, isDelete, data, formSubmit, deleteData }) =
     const [disabled, setDisabled] = useState(!isDelete);
 
     const handleSubmit = () => {
-        isDelete ? deleteData(data) : 
+        isDelete ? deleteData(data) :
             document.querySelector('#formButton').click();
     }
 
@@ -24,7 +24,7 @@ const Modal = ({ isShow, closeModal, isDelete, data, formSubmit, deleteData }) =
 
     useEffect(() => {
         setDisabled(!isDelete);
-        
+
     }, [data])
 
 
@@ -35,7 +35,9 @@ const Modal = ({ isShow, closeModal, isDelete, data, formSubmit, deleteData }) =
             </BSModal.Header>
             <BSModal.Body>
                 {
-                    isDelete ? `Are you sure to delete ${data.username} data?` : (
+                    isDelete ? (
+                        <p>Are you sure to delete <strong>{data.username}</strong> data?</p>
+                    ) : (
                         <Form onSubmit={onSubmit} defaultValues={data} setDisable={handleDisable}>
                             <Input required type="text" placeholder="User Name" name="username" />
                             <Input required type="email" placeholder="User Email" name="email" />
