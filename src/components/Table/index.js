@@ -1,12 +1,12 @@
 import React, { Fragment, useState } from 'react'
 import { useEffect } from 'react';
-import { Button, Form, Pagination, Table as BSTable } from 'react-bootstrap'
+import { Button, Dropdown, DropdownButton, Form as BSForm, Pagination, Table as BSTable } from 'react-bootstrap'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPencilAlt, faSortAlphaDown, faSortAlphaUp, faTrashAlt } from '@fortawesome/free-solid-svg-icons';
 import './Table.scss'
 import { SortByObjField } from '../../utils/sort';
 
-const TablePagination = ({ paginationItems, setActivePage, activePage }) => {
+const TablePagination = ({ paginationItems, setActivePage, activePage, itemsPerPage, handleChangeItemsPerPage }) => {
     const handlePrev = () => activePage > 1 ? setActivePage(activePage - 1) : setActivePage(1);
     const handleNext = () => activePage < paginationItems.length ? setActivePage(activePage + 1) : setActivePage(paginationItems.length);
     const handleFirst = () => setActivePage(1);
@@ -14,33 +14,37 @@ const TablePagination = ({ paginationItems, setActivePage, activePage }) => {
     const itemsPerPageArr = [5, 10, 20];
 
     return (
-        <Fragment>
-            {/* <Form.Select size="md">
-                {
-                    itemsPerPageArr.map(i => (
-                        <option key={i} value={i}>{i}</option>
-                    ))
-                }
-            </Form.Select> */}
-            <Pagination size='md'>
-                <Pagination.First disabled={activePage === 1} onClick={handleFirst} />
-                <Pagination.Prev disabled={activePage === 1} onClick={handlePrev} />
-                {
-                    // paginationItems.length > 3 ? (
-                    //     paginationItems.map(pg => (
-                    //         pg.key >= activePage - 2 ?
-                    //         <Pagination.Item key={pg.key} active={pg.active} onClick={() => setActivePage(pg.key)}>{pg.key}</Pagination.Item> : null
-                    //     ))
-                    // ) :
-                    paginationItems.map(pg => (
-                        <Pagination.Item key={pg.key} active={pg.active} onClick={() => setActivePage(pg.key)}>{pg.key}</Pagination.Item>
-                    ))
-                }
-                <Pagination.Next disabled={activePage === paginationItems.length} onClick={handleNext} />
-                <Pagination.Last disabled={activePage === paginationItems.length} onClick={handleLast} />
-            </Pagination>
+            <div className="w-100 d-flex justify-content-between">
+                <span>{`Page ${activePage} of ${paginationItems.length}`}</span>
+                <div className="d-flex">
+                    <DropdownButton className='mr-3' id="dropdown-basic-button" title={`Show ${itemsPerPage} data`}>
+                        {
+                            itemsPerPageArr.map((val, i) => (
+                                <Dropdown.Item onClick={() => handleChangeItemsPerPage(val)}>{val}</Dropdown.Item>
+                            ))
+                        }
+                    </DropdownButton>
+                    <Pagination size='md'>
+                        <Pagination.First disabled={activePage === 1} onClick={handleFirst} />
+                        <Pagination.Prev disabled={activePage === 1} onClick={handlePrev} />
+                        {
+                            // paginationItems.length > 3 ? (
+                            //     paginationItems.map(pg => (
+                            //         pg.key >= activePage - 2 ?
+                            //         <Pagination.Item key={pg.key} active={pg.active} onClick={() => setActivePage(pg.key)}>{pg.key}</Pagination.Item> : null
+                            //     ))
+                            // ) :
+                            paginationItems.map(pg => (
+                                <Pagination.Item key={pg.key} active={pg.active} onClick={() => setActivePage(pg.key)}>{pg.key}</Pagination.Item>
+                            ))
+                        }
+                        <Pagination.Next disabled={activePage === paginationItems.length} onClick={handleNext} />
+                        <Pagination.Last disabled={activePage === paginationItems.length} onClick={handleLast} />
+                    </Pagination>
 
-        </Fragment>
+                </div>
+            </div>
+
     )
 }
 
@@ -94,10 +98,9 @@ const Table = ({ columns, data, editAction, deleteAction }) => {
     const [itemsPerPage, setItemsPerPage] = useState(5);
 
     useEffect(() => {
-        setItemsPerPage(5);
         setDisplayedColumns(columns);
         const pages = [];
-        for (let index = 1; index <= Math.round(data.length / itemsPerPage); index++) {
+        for (let index = 1; index <= Math.ceil(data.length / itemsPerPage); index++) {
             pages.push({
                 key: index,
                 active: index === activePage
@@ -107,10 +110,8 @@ const Table = ({ columns, data, editAction, deleteAction }) => {
         setPageItems(pages);
         getPageData(data);
 
-        console.log(displayedData);
-
         return () => data
-    }, [isAscending, data, activePage])
+    }, [isAscending, data, activePage, itemsPerPage])
 
     const handleEditButton = (data) => editAction(data);
     const handleDeleteButton = (data) => deleteAction(data);
@@ -127,8 +128,11 @@ const Table = ({ columns, data, editAction, deleteAction }) => {
         const end = start + itemsPerPage;
         const pageData = [...data].slice(start, end);
         setDisplayedData(pageData);
+    }
 
-        // setDisplayedData(data);
+    const handleChangeItemsPerPage = (val) => {
+        setActivePage(1);
+        setItemsPerPage(val);
     }
 
     const sortByfield = (field, isNumber) => {
@@ -165,10 +169,7 @@ const Table = ({ columns, data, editAction, deleteAction }) => {
                 </tbody>
 
             </BSTable>
-            <div className="w-100 d-flex justify-content-end">
-                <TablePagination paginationItems={pageItems} setActivePage={setActivePage} activePage={activePage} />
-
-            </div>
+            <TablePagination paginationItems={pageItems} setActivePage={setActivePage} activePage={activePage} itemsPerPage={itemsPerPage} handleChangeItemsPerPage={handleChangeItemsPerPage} />
 
         </Fragment>
     )
