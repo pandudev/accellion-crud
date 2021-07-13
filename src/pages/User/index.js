@@ -99,7 +99,7 @@ const User = () => {
             <Container className="py-3">
                 <div className="d-flex mb-3 justify-content-between align-items-center">
                     <h1 className='h2'><span className='bg-primary text-light px-2'> Accellion</span> Frontend Developer Test</h1>
-                    <Button variant="primary" id="addButton" onClick={handleAdd}><FontAwesomeIcon className="mr-1" icon={faUserPlus} /> Add User</Button>
+                    <Button variant="primary" id="addButton" onClick={handleAdd}><FontAwesomeIcon className="mr-1" icon={faUserPlus} /> <span>Add User</span></Button>
                 </div>
                 <Table data={users} deleteAction={handleDelete} editAction={handleEdit}/>
             </Container>
