@@ -9,7 +9,7 @@ const Modal = ({ isShow, closeModal, isDelete, data, formSubmit, deleteData }) =
 
 
     const title = isDelete ? 'Confirm Delete' : 'User Form';
-    const [disabled, setDisabled] = useState(isDelete ? true : false);
+    const [disabled, setDisabled] = useState(!isDelete);
 
     const handleSubmit = () => {
         isDelete ? deleteData(data) : 
@@ -20,6 +20,15 @@ const Modal = ({ isShow, closeModal, isDelete, data, formSubmit, deleteData }) =
         formSubmit(data);
     }
 
+    const handleDisable = (val) => {
+        setDisabled(val);
+    }
+
+    useEffect(() => {
+        setDisabled(!isDelete);
+        
+    }, [data])
+
 
     return (
         <BSModal show={isShow} onHide={closeModal} >
@@ -29,7 +38,7 @@ const Modal = ({ isShow, closeModal, isDelete, data, formSubmit, deleteData }) =
             <ModalBody>
                 {
                     isDelete ? `Are you sure to delete ${data.username} data?` : (
-                        <Form onSubmit={onSubmit} defaultValues={data} setDisable={setDisabled}>
+                        <Form onSubmit={onSubmit} defaultValues={data} setDisable={handleDisable}>
                             <Input required type="text" placeholder="User Name" name="username" />
                             <Input required type="email" placeholder="User Email" name="email" />
                             <Input required type="number" min={0} placeholder="User Score" name="score" />

@@ -106,7 +106,8 @@ const User = () => {
         {
             field: 'score',
             label: 'Score',
-            sortable: true
+            sortable: true,
+            isNumber: true
         },
         {
             field: 'registered',
@@ -128,7 +129,7 @@ const User = () => {
                     <h1 className='h2'><span className='bg-primary text-light px-2'> Accellion</span> Frontend Developer Test</h1>
                     <Button variant="primary"  onClick={handleAdd}><FontAwesomeIcon className="mr-1" icon={faUserPlus} /> Add User</Button>
                 </div>
-                <Table columns={columns} data={users} deleteAction={handleDelete} editAction={handleEdit} itemsPerPage={8}/>
+                <Table columns={columns} data={users} deleteAction={handleDelete} editAction={handleEdit}/>
             </Container>
 
 
