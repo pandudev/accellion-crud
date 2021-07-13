@@ -29,7 +29,7 @@ const Modal = ({ isShow, closeModal, isDelete, data, formSubmit, deleteData }) =
 
 
     return (
-        <BSModal show={isShow} onHide={closeModal} >
+        <BSModal id="userModal" show={isShow} onHide={closeModal} >
             <BSModal.Header closeButton>
                 <BSModal.Title>{title}</BSModal.Title>
             </BSModal.Header>

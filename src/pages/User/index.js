@@ -92,34 +92,6 @@ const User = () => {
         setSelectedData(null);
     }
 
-    const columns = [
-        {
-            field: 'username',
-            label: 'User name',
-            sortable: true
-        },
-        {
-            field: 'email',
-            label: 'Email',
-            sortable: true
-        },
-        {
-            field: 'score',
-            label: 'Score',
-            sortable: true,
-            isNumber: true
-        },
-        {
-            field: 'registered',
-            label: 'Registered',
-            sortable: true
-        },
-        {
-            field: 'action',
-            label: '',
-            sortable: false
-        }
-    ]
     return (
         <Fragment>
             <NotificationContainer />
@@ -127,9 +99,9 @@ const User = () => {
             <Container className="py-3">
                 <div className="d-flex mb-3 justify-content-between align-items-center">
                     <h1 className='h2'><span className='bg-primary text-light px-2'> Accellion</span> Frontend Developer Test</h1>
-                    <Button variant="primary"  onClick={handleAdd}><FontAwesomeIcon className="mr-1" icon={faUserPlus} /> Add User</Button>
+                    <Button variant="primary" id="addButton" onClick={handleAdd}><FontAwesomeIcon className="mr-1" icon={faUserPlus} /> Add User</Button>
                 </div>
-                <Table columns={columns} data={users} deleteAction={handleDelete} editAction={handleEdit}/>
+                <Table data={users} deleteAction={handleDelete} editAction={handleEdit}/>
             </Container>
 
 

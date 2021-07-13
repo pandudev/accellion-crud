@@ -1,0 +1,982 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`User Testing renders table 1`] = `
+Array [
+  <div
+    className="table-responsive"
+  >
+    <table
+      className="table table-sm table-bordered table-hover"
+    >
+      <thead>
+        <tr>
+          <th
+            onClick={[Function]}
+          >
+            User name
+            <span
+              className="sort ml-1"
+            >
+              <svg
+                aria-hidden="true"
+                className="svg-inline--fa fa-sort-alpha-down fa-w-14 "
+                data-icon="sort-alpha-down"
+                data-prefix="fas"
+                focusable="false"
+                role="img"
+                style={Object {}}
+                viewBox="0 0 448 512"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M176 352h-48V48a16 16 0 0 0-16-16H80a16 16 0 0 0-16 16v304H16c-14.19 0-21.36 17.24-11.29 27.31l80 96a16 16 0 0 0 22.62 0l80-96C197.35 369.26 190.22 352 176 352zm240-64H288a16 16 0 0 0-16 16v32a16 16 0 0 0 16 16h56l-61.26 70.45A32 32 0 0 0 272 446.37V464a16 16 0 0 0 16 16h128a16 16 0 0 0 16-16v-32a16 16 0 0 0-16-16h-56l61.26-70.45A32 32 0 0 0 432 321.63V304a16 16 0 0 0-16-16zm31.06-85.38l-59.27-160A16 16 0 0 0 372.72 32h-41.44a16 16 0 0 0-15.07 10.62l-59.27 160A16 16 0 0 0 272 224h24.83a16 16 0 0 0 15.23-11.08l4.42-12.92h71l4.41 12.92A16 16 0 0 0 407.16 224H432a16 16 0 0 0 15.06-21.38zM335.61 144L352 96l16.39 48z"
+                  fill="currentColor"
+                  style={Object {}}
+                />
+              </svg>
+            </span>
+          </th>
+          <th
+            onClick={[Function]}
+          >
+            Email
+            <span
+              className="sort ml-1"
+            >
+              <svg
+                aria-hidden="true"
+                className="svg-inline--fa fa-sort-alpha-down fa-w-14 "
+                data-icon="sort-alpha-down"
+                data-prefix="fas"
+                focusable="false"
+                role="img"
+                style={Object {}}
+                viewBox="0 0 448 512"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M176 352h-48V48a16 16 0 0 0-16-16H80a16 16 0 0 0-16 16v304H16c-14.19 0-21.36 17.24-11.29 27.31l80 96a16 16 0 0 0 22.62 0l80-96C197.35 369.26 190.22 352 176 352zm240-64H288a16 16 0 0 0-16 16v32a16 16 0 0 0 16 16h56l-61.26 70.45A32 32 0 0 0 272 446.37V464a16 16 0 0 0 16 16h128a16 16 0 0 0 16-16v-32a16 16 0 0 0-16-16h-56l61.26-70.45A32 32 0 0 0 432 321.63V304a16 16 0 0 0-16-16zm31.06-85.38l-59.27-160A16 16 0 0 0 372.72 32h-41.44a16 16 0 0 0-15.07 10.62l-59.27 160A16 16 0 0 0 272 224h24.83a16 16 0 0 0 15.23-11.08l4.42-12.92h71l4.41 12.92A16 16 0 0 0 407.16 224H432a16 16 0 0 0 15.06-21.38zM335.61 144L352 96l16.39 48z"
+                  fill="currentColor"
+                  style={Object {}}
+                />
+              </svg>
+            </span>
+          </th>
+          <th
+            onClick={[Function]}
+          >
+            Score
+            <span
+              className="sort ml-1"
+            >
+              <svg
+                aria-hidden="true"
+                className="svg-inline--fa fa-sort-alpha-down fa-w-14 "
+                data-icon="sort-alpha-down"
+                data-prefix="fas"
+                focusable="false"
+                role="img"
+                style={Object {}}
+                viewBox="0 0 448 512"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M176 352h-48V48a16 16 0 0 0-16-16H80a16 16 0 0 0-16 16v304H16c-14.19 0-21.36 17.24-11.29 27.31l80 96a16 16 0 0 0 22.62 0l80-96C197.35 369.26 190.22 352 176 352zm240-64H288a16 16 0 0 0-16 16v32a16 16 0 0 0 16 16h56l-61.26 70.45A32 32 0 0 0 272 446.37V464a16 16 0 0 0 16 16h128a16 16 0 0 0 16-16v-32a16 16 0 0 0-16-16h-56l61.26-70.45A32 32 0 0 0 432 321.63V304a16 16 0 0 0-16-16zm31.06-85.38l-59.27-160A16 16 0 0 0 372.72 32h-41.44a16 16 0 0 0-15.07 10.62l-59.27 160A16 16 0 0 0 272 224h24.83a16 16 0 0 0 15.23-11.08l4.42-12.92h71l4.41 12.92A16 16 0 0 0 407.16 224H432a16 16 0 0 0 15.06-21.38zM335.61 144L352 96l16.39 48z"
+                  fill="currentColor"
+                  style={Object {}}
+                />
+              </svg>
+            </span>
+          </th>
+          <th
+            onClick={[Function]}
+          >
+            Registered
+            <span
+              className="sort ml-1"
+            >
+              <svg
+                aria-hidden="true"
+                className="svg-inline--fa fa-sort-alpha-down fa-w-14 "
+                data-icon="sort-alpha-down"
+                data-prefix="fas"
+                focusable="false"
+                role="img"
+                style={Object {}}
+                viewBox="0 0 448 512"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M176 352h-48V48a16 16 0 0 0-16-16H80a16 16 0 0 0-16 16v304H16c-14.19 0-21.36 17.24-11.29 27.31l80 96a16 16 0 0 0 22.62 0l80-96C197.35 369.26 190.22 352 176 352zm240-64H288a16 16 0 0 0-16 16v32a16 16 0 0 0 16 16h56l-61.26 70.45A32 32 0 0 0 272 446.37V464a16 16 0 0 0 16 16h128a16 16 0 0 0 16-16v-32a16 16 0 0 0-16-16h-56l61.26-70.45A32 32 0 0 0 432 321.63V304a16 16 0 0 0-16-16zm31.06-85.38l-59.27-160A16 16 0 0 0 372.72 32h-41.44a16 16 0 0 0-15.07 10.62l-59.27 160A16 16 0 0 0 272 224h24.83a16 16 0 0 0 15.23-11.08l4.42-12.92h71l4.41 12.92A16 16 0 0 0 407.16 224H432a16 16 0 0 0 15.06-21.38zM335.61 144L352 96l16.39 48z"
+                  fill="currentColor"
+                  style={Object {}}
+                />
+              </svg>
+            </span>
+          </th>
+          <th
+            onClick={[Function]}
+          >
+            
+            <span
+              className="sort ml-1"
+            />
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr
+          className="tbl-row"
+        >
+          <td
+            className="align-middle"
+          >
+            <span
+              className="action text-primary"
+              onClick={[Function]}
+            >
+              User 1
+            </span>
+          </td>
+          <td
+            className="align-middle"
+          >
+            user1@test.com
+          </td>
+          <td
+            className="align-middle text-right"
+          />
+          <td
+            className="align-middle"
+          >
+            2021-07-13T05:24:52.000Z
+          </td>
+          <td
+            className="action"
+          >
+            <button
+              className="btn btn-link"
+              disabled={false}
+              onClick={[Function]}
+              type="button"
+            >
+              <svg
+                aria-hidden="true"
+                className="svg-inline--fa fa-trash-alt fa-w-14 "
+                data-icon="trash-alt"
+                data-prefix="fas"
+                focusable="false"
+                role="img"
+                style={Object {}}
+                viewBox="0 0 448 512"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M32 464a48 48 0 0 0 48 48h288a48 48 0 0 0 48-48V128H32zm272-256a16 16 0 0 1 32 0v224a16 16 0 0 1-32 0zm-96 0a16 16 0 0 1 32 0v224a16 16 0 0 1-32 0zm-96 0a16 16 0 0 1 32 0v224a16 16 0 0 1-32 0zM432 32H312l-9.4-18.7A24 24 0 0 0 281.1 0H166.8a23.72 23.72 0 0 0-21.4 13.3L136 32H16A16 16 0 0 0 0 48v32a16 16 0 0 0 16 16h416a16 16 0 0 0 16-16V48a16 16 0 0 0-16-16z"
+                  fill="currentColor"
+                  style={Object {}}
+                />
+              </svg>
+            </button>
+          </td>
+        </tr>
+        <tr
+          className="tbl-row"
+        >
+          <td
+            className="align-middle"
+          >
+            <span
+              className="action text-primary"
+              onClick={[Function]}
+            >
+              User 2
+            </span>
+          </td>
+          <td
+            className="align-middle"
+          >
+            user2@test.com
+          </td>
+          <td
+            className="align-middle text-right"
+          />
+          <td
+            className="align-middle"
+          >
+            2021-07-13T05:14:54.000Z
+          </td>
+          <td
+            className="action"
+          >
+            <button
+              className="btn btn-link"
+              disabled={false}
+              onClick={[Function]}
+              type="button"
+            >
+              <svg
+                aria-hidden="true"
+                className="svg-inline--fa fa-trash-alt fa-w-14 "
+                data-icon="trash-alt"
+                data-prefix="fas"
+                focusable="false"
+                role="img"
+                style={Object {}}
+                viewBox="0 0 448 512"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M32 464a48 48 0 0 0 48 48h288a48 48 0 0 0 48-48V128H32zm272-256a16 16 0 0 1 32 0v224a16 16 0 0 1-32 0zm-96 0a16 16 0 0 1 32 0v224a16 16 0 0 1-32 0zm-96 0a16 16 0 0 1 32 0v224a16 16 0 0 1-32 0zM432 32H312l-9.4-18.7A24 24 0 0 0 281.1 0H166.8a23.72 23.72 0 0 0-21.4 13.3L136 32H16A16 16 0 0 0 0 48v32a16 16 0 0 0 16 16h416a16 16 0 0 0 16-16V48a16 16 0 0 0-16-16z"
+                  fill="currentColor"
+                  style={Object {}}
+                />
+              </svg>
+            </button>
+          </td>
+        </tr>
+        <tr
+          className="tbl-row"
+        >
+          <td
+            className="align-middle"
+          >
+            <span
+              className="action text-primary"
+              onClick={[Function]}
+            >
+              User 3
+            </span>
+          </td>
+          <td
+            className="align-middle"
+          >
+            user3@test.com
+          </td>
+          <td
+            className="align-middle text-right"
+          />
+          <td
+            className="align-middle"
+          >
+            2021-07-12T21:09:56.000Z
+          </td>
+          <td
+            className="action"
+          >
+            <button
+              className="btn btn-link"
+              disabled={false}
+              onClick={[Function]}
+              type="button"
+            >
+              <svg
+                aria-hidden="true"
+                className="svg-inline--fa fa-trash-alt fa-w-14 "
+                data-icon="trash-alt"
+                data-prefix="fas"
+                focusable="false"
+                role="img"
+                style={Object {}}
+                viewBox="0 0 448 512"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M32 464a48 48 0 0 0 48 48h288a48 48 0 0 0 48-48V128H32zm272-256a16 16 0 0 1 32 0v224a16 16 0 0 1-32 0zm-96 0a16 16 0 0 1 32 0v224a16 16 0 0 1-32 0zm-96 0a16 16 0 0 1 32 0v224a16 16 0 0 1-32 0zM432 32H312l-9.4-18.7A24 24 0 0 0 281.1 0H166.8a23.72 23.72 0 0 0-21.4 13.3L136 32H16A16 16 0 0 0 0 48v32a16 16 0 0 0 16 16h416a16 16 0 0 0 16-16V48a16 16 0 0 0-16-16z"
+                  fill="currentColor"
+                  style={Object {}}
+                />
+              </svg>
+            </button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>,
+  <div
+    className="w-100 d-flex justify-content-between"
+  >
+    <span>
+      Page 1 of 1
+    </span>
+    <div
+      className="d-flex"
+    >
+      <div
+        className="mr-3 dropdown"
+      >
+        <button
+          aria-expanded={false}
+          aria-haspopup={true}
+          className="dropdown-toggle btn btn-primary"
+          disabled={false}
+          id="dropdown-basic-button"
+          onClick={[Function]}
+          type="button"
+        >
+          Show 5 data
+        </button>
+      </div>
+      <ul
+        className="pagination pagination-md"
+      >
+        <li
+          className="page-item disabled"
+        >
+          <span
+            className="page-link"
+            disabled={true}
+            onClick={[Function]}
+          >
+            <span
+              aria-hidden="true"
+            >
+              «
+            </span>
+            <span
+              className="sr-only"
+            >
+              First
+            </span>
+          </span>
+        </li>
+        <li
+          className="page-item disabled"
+        >
+          <span
+            className="page-link"
+            disabled={true}
+            onClick={[Function]}
+          >
+            <span
+              aria-hidden="true"
+            >
+              ‹
+            </span>
+            <span
+              className="sr-only"
+            >
+              Previous
+            </span>
+          </span>
+        </li>
+        <li
+          className="page-item active"
+        >
+          <span
+            className="page-link"
+            disabled={false}
+            onClick={[Function]}
+          >
+            1
+            <span
+              className="sr-only"
+            >
+              (current)
+            </span>
+          </span>
+        </li>
+        <li
+          className="page-item disabled"
+        >
+          <span
+            className="page-link"
+            disabled={true}
+            onClick={[Function]}
+          >
+            <span
+              aria-hidden="true"
+            >
+              ›
+            </span>
+            <span
+              className="sr-only"
+            >
+              Next
+            </span>
+          </span>
+        </li>
+        <li
+          className="page-item disabled"
+        >
+          <span
+            className="page-link"
+            disabled={true}
+            onClick={[Function]}
+          >
+            <span
+              aria-hidden="true"
+            >
+              »
+            </span>
+            <span
+              className="sr-only"
+            >
+              Last
+            </span>
+          </span>
+        </li>
+      </ul>
+    </div>
+  </div>,
+]
+`;
+
+exports[`User Testing renders table with data 1`] = `
+Array [
+  <div
+    className="table-responsive"
+  >
+    <table
+      className="table table-sm table-bordered table-hover"
+    >
+      <thead>
+        <tr>
+          <th
+            onClick={[Function]}
+          >
+            User name
+            <span
+              className="sort ml-1"
+            >
+              <svg
+                aria-hidden="true"
+                className="svg-inline--fa fa-sort-alpha-down fa-w-14 "
+                data-icon="sort-alpha-down"
+                data-prefix="fas"
+                focusable="false"
+                role="img"
+                style={Object {}}
+                viewBox="0 0 448 512"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M176 352h-48V48a16 16 0 0 0-16-16H80a16 16 0 0 0-16 16v304H16c-14.19 0-21.36 17.24-11.29 27.31l80 96a16 16 0 0 0 22.62 0l80-96C197.35 369.26 190.22 352 176 352zm240-64H288a16 16 0 0 0-16 16v32a16 16 0 0 0 16 16h56l-61.26 70.45A32 32 0 0 0 272 446.37V464a16 16 0 0 0 16 16h128a16 16 0 0 0 16-16v-32a16 16 0 0 0-16-16h-56l61.26-70.45A32 32 0 0 0 432 321.63V304a16 16 0 0 0-16-16zm31.06-85.38l-59.27-160A16 16 0 0 0 372.72 32h-41.44a16 16 0 0 0-15.07 10.62l-59.27 160A16 16 0 0 0 272 224h24.83a16 16 0 0 0 15.23-11.08l4.42-12.92h71l4.41 12.92A16 16 0 0 0 407.16 224H432a16 16 0 0 0 15.06-21.38zM335.61 144L352 96l16.39 48z"
+                  fill="currentColor"
+                  style={Object {}}
+                />
+              </svg>
+            </span>
+          </th>
+          <th
+            onClick={[Function]}
+          >
+            Email
+            <span
+              className="sort ml-1"
+            >
+              <svg
+                aria-hidden="true"
+                className="svg-inline--fa fa-sort-alpha-down fa-w-14 "
+                data-icon="sort-alpha-down"
+                data-prefix="fas"
+                focusable="false"
+                role="img"
+                style={Object {}}
+                viewBox="0 0 448 512"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M176 352h-48V48a16 16 0 0 0-16-16H80a16 16 0 0 0-16 16v304H16c-14.19 0-21.36 17.24-11.29 27.31l80 96a16 16 0 0 0 22.62 0l80-96C197.35 369.26 190.22 352 176 352zm240-64H288a16 16 0 0 0-16 16v32a16 16 0 0 0 16 16h56l-61.26 70.45A32 32 0 0 0 272 446.37V464a16 16 0 0 0 16 16h128a16 16 0 0 0 16-16v-32a16 16 0 0 0-16-16h-56l61.26-70.45A32 32 0 0 0 432 321.63V304a16 16 0 0 0-16-16zm31.06-85.38l-59.27-160A16 16 0 0 0 372.72 32h-41.44a16 16 0 0 0-15.07 10.62l-59.27 160A16 16 0 0 0 272 224h24.83a16 16 0 0 0 15.23-11.08l4.42-12.92h71l4.41 12.92A16 16 0 0 0 407.16 224H432a16 16 0 0 0 15.06-21.38zM335.61 144L352 96l16.39 48z"
+                  fill="currentColor"
+                  style={Object {}}
+                />
+              </svg>
+            </span>
+          </th>
+          <th
+            onClick={[Function]}
+          >
+            Score
+            <span
+              className="sort ml-1"
+            >
+              <svg
+                aria-hidden="true"
+                className="svg-inline--fa fa-sort-alpha-down fa-w-14 "
+                data-icon="sort-alpha-down"
+                data-prefix="fas"
+                focusable="false"
+                role="img"
+                style={Object {}}
+                viewBox="0 0 448 512"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M176 352h-48V48a16 16 0 0 0-16-16H80a16 16 0 0 0-16 16v304H16c-14.19 0-21.36 17.24-11.29 27.31l80 96a16 16 0 0 0 22.62 0l80-96C197.35 369.26 190.22 352 176 352zm240-64H288a16 16 0 0 0-16 16v32a16 16 0 0 0 16 16h56l-61.26 70.45A32 32 0 0 0 272 446.37V464a16 16 0 0 0 16 16h128a16 16 0 0 0 16-16v-32a16 16 0 0 0-16-16h-56l61.26-70.45A32 32 0 0 0 432 321.63V304a16 16 0 0 0-16-16zm31.06-85.38l-59.27-160A16 16 0 0 0 372.72 32h-41.44a16 16 0 0 0-15.07 10.62l-59.27 160A16 16 0 0 0 272 224h24.83a16 16 0 0 0 15.23-11.08l4.42-12.92h71l4.41 12.92A16 16 0 0 0 407.16 224H432a16 16 0 0 0 15.06-21.38zM335.61 144L352 96l16.39 48z"
+                  fill="currentColor"
+                  style={Object {}}
+                />
+              </svg>
+            </span>
+          </th>
+          <th
+            onClick={[Function]}
+          >
+            Registered
+            <span
+              className="sort ml-1"
+            >
+              <svg
+                aria-hidden="true"
+                className="svg-inline--fa fa-sort-alpha-down fa-w-14 "
+                data-icon="sort-alpha-down"
+                data-prefix="fas"
+                focusable="false"
+                role="img"
+                style={Object {}}
+                viewBox="0 0 448 512"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M176 352h-48V48a16 16 0 0 0-16-16H80a16 16 0 0 0-16 16v304H16c-14.19 0-21.36 17.24-11.29 27.31l80 96a16 16 0 0 0 22.62 0l80-96C197.35 369.26 190.22 352 176 352zm240-64H288a16 16 0 0 0-16 16v32a16 16 0 0 0 16 16h56l-61.26 70.45A32 32 0 0 0 272 446.37V464a16 16 0 0 0 16 16h128a16 16 0 0 0 16-16v-32a16 16 0 0 0-16-16h-56l61.26-70.45A32 32 0 0 0 432 321.63V304a16 16 0 0 0-16-16zm31.06-85.38l-59.27-160A16 16 0 0 0 372.72 32h-41.44a16 16 0 0 0-15.07 10.62l-59.27 160A16 16 0 0 0 272 224h24.83a16 16 0 0 0 15.23-11.08l4.42-12.92h71l4.41 12.92A16 16 0 0 0 407.16 224H432a16 16 0 0 0 15.06-21.38zM335.61 144L352 96l16.39 48z"
+                  fill="currentColor"
+                  style={Object {}}
+                />
+              </svg>
+            </span>
+          </th>
+          <th
+            onClick={[Function]}
+          >
+            
+            <span
+              className="sort ml-1"
+            />
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr
+          className="tbl-row"
+        >
+          <td
+            className="align-middle"
+          >
+            <span
+              className="action text-primary"
+              onClick={[Function]}
+            >
+              User 1
+            </span>
+          </td>
+          <td
+            className="align-middle"
+          >
+            user1@test.com
+          </td>
+          <td
+            className="align-middle text-right"
+          />
+          <td
+            className="align-middle"
+          >
+            2021-07-13T05:24:52.000Z
+          </td>
+          <td
+            className="action"
+          >
+            <button
+              className="btn btn-link"
+              disabled={false}
+              onClick={[Function]}
+              type="button"
+            >
+              <svg
+                aria-hidden="true"
+                className="svg-inline--fa fa-trash-alt fa-w-14 "
+                data-icon="trash-alt"
+                data-prefix="fas"
+                focusable="false"
+                role="img"
+                style={Object {}}
+                viewBox="0 0 448 512"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M32 464a48 48 0 0 0 48 48h288a48 48 0 0 0 48-48V128H32zm272-256a16 16 0 0 1 32 0v224a16 16 0 0 1-32 0zm-96 0a16 16 0 0 1 32 0v224a16 16 0 0 1-32 0zm-96 0a16 16 0 0 1 32 0v224a16 16 0 0 1-32 0zM432 32H312l-9.4-18.7A24 24 0 0 0 281.1 0H166.8a23.72 23.72 0 0 0-21.4 13.3L136 32H16A16 16 0 0 0 0 48v32a16 16 0 0 0 16 16h416a16 16 0 0 0 16-16V48a16 16 0 0 0-16-16z"
+                  fill="currentColor"
+                  style={Object {}}
+                />
+              </svg>
+            </button>
+          </td>
+        </tr>
+        <tr
+          className="tbl-row"
+        >
+          <td
+            className="align-middle"
+          >
+            <span
+              className="action text-primary"
+              onClick={[Function]}
+            >
+              User 2
+            </span>
+          </td>
+          <td
+            className="align-middle"
+          >
+            user2@test.com
+          </td>
+          <td
+            className="align-middle text-right"
+          />
+          <td
+            className="align-middle"
+          >
+            2021-07-13T05:14:54.000Z
+          </td>
+          <td
+            className="action"
+          >
+            <button
+              className="btn btn-link"
+              disabled={false}
+              onClick={[Function]}
+              type="button"
+            >
+              <svg
+                aria-hidden="true"
+                className="svg-inline--fa fa-trash-alt fa-w-14 "
+                data-icon="trash-alt"
+                data-prefix="fas"
+                focusable="false"
+                role="img"
+                style={Object {}}
+                viewBox="0 0 448 512"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M32 464a48 48 0 0 0 48 48h288a48 48 0 0 0 48-48V128H32zm272-256a16 16 0 0 1 32 0v224a16 16 0 0 1-32 0zm-96 0a16 16 0 0 1 32 0v224a16 16 0 0 1-32 0zm-96 0a16 16 0 0 1 32 0v224a16 16 0 0 1-32 0zM432 32H312l-9.4-18.7A24 24 0 0 0 281.1 0H166.8a23.72 23.72 0 0 0-21.4 13.3L136 32H16A16 16 0 0 0 0 48v32a16 16 0 0 0 16 16h416a16 16 0 0 0 16-16V48a16 16 0 0 0-16-16z"
+                  fill="currentColor"
+                  style={Object {}}
+                />
+              </svg>
+            </button>
+          </td>
+        </tr>
+        <tr
+          className="tbl-row"
+        >
+          <td
+            className="align-middle"
+          >
+            <span
+              className="action text-primary"
+              onClick={[Function]}
+            >
+              User 3
+            </span>
+          </td>
+          <td
+            className="align-middle"
+          >
+            user3@test.com
+          </td>
+          <td
+            className="align-middle text-right"
+          />
+          <td
+            className="align-middle"
+          >
+            2021-07-12T21:09:56.000Z
+          </td>
+          <td
+            className="action"
+          >
+            <button
+              className="btn btn-link"
+              disabled={false}
+              onClick={[Function]}
+              type="button"
+            >
+              <svg
+                aria-hidden="true"
+                className="svg-inline--fa fa-trash-alt fa-w-14 "
+                data-icon="trash-alt"
+                data-prefix="fas"
+                focusable="false"
+                role="img"
+                style={Object {}}
+                viewBox="0 0 448 512"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M32 464a48 48 0 0 0 48 48h288a48 48 0 0 0 48-48V128H32zm272-256a16 16 0 0 1 32 0v224a16 16 0 0 1-32 0zm-96 0a16 16 0 0 1 32 0v224a16 16 0 0 1-32 0zm-96 0a16 16 0 0 1 32 0v224a16 16 0 0 1-32 0zM432 32H312l-9.4-18.7A24 24 0 0 0 281.1 0H166.8a23.72 23.72 0 0 0-21.4 13.3L136 32H16A16 16 0 0 0 0 48v32a16 16 0 0 0 16 16h416a16 16 0 0 0 16-16V48a16 16 0 0 0-16-16z"
+                  fill="currentColor"
+                  style={Object {}}
+                />
+              </svg>
+            </button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>,
+  <div
+    className="w-100 d-flex justify-content-between"
+  >
+    <span>
+      Page 1 of 1
+    </span>
+    <div
+      className="d-flex"
+    >
+      <div
+        className="mr-3 dropdown"
+      >
+        <button
+          aria-expanded={false}
+          aria-haspopup={true}
+          className="dropdown-toggle btn btn-primary"
+          disabled={false}
+          id="dropdown-basic-button"
+          onClick={[Function]}
+          type="button"
+        >
+          Show 5 data
+        </button>
+      </div>
+      <ul
+        className="pagination pagination-md"
+      >
+        <li
+          className="page-item disabled"
+        >
+          <span
+            className="page-link"
+            disabled={true}
+            onClick={[Function]}
+          >
+            <span
+              aria-hidden="true"
+            >
+              «
+            </span>
+            <span
+              className="sr-only"
+            >
+              First
+            </span>
+          </span>
+        </li>
+        <li
+          className="page-item disabled"
+        >
+          <span
+            className="page-link"
+            disabled={true}
+            onClick={[Function]}
+          >
+            <span
+              aria-hidden="true"
+            >
+              ‹
+            </span>
+            <span
+              className="sr-only"
+            >
+              Previous
+            </span>
+          </span>
+        </li>
+        <li
+          className="page-item active"
+        >
+          <span
+            className="page-link"
+            disabled={false}
+            onClick={[Function]}
+          >
+            1
+            <span
+              className="sr-only"
+            >
+              (current)
+            </span>
+          </span>
+        </li>
+        <li
+          className="page-item disabled"
+        >
+          <span
+            className="page-link"
+            disabled={true}
+            onClick={[Function]}
+          >
+            <span
+              aria-hidden="true"
+            >
+              ›
+            </span>
+            <span
+              className="sr-only"
+            >
+              Next
+            </span>
+          </span>
+        </li>
+        <li
+          className="page-item disabled"
+        >
+          <span
+            className="page-link"
+            disabled={true}
+            onClick={[Function]}
+          >
+            <span
+              aria-hidden="true"
+            >
+              »
+            </span>
+            <span
+              className="sr-only"
+            >
+              Last
+            </span>
+          </span>
+        </li>
+      </ul>
+    </div>
+  </div>,
+]
+`;
+
+exports[`User Testing renders table without data 1`] = `
+<div
+  className="table-responsive"
+>
+  <table
+    className="table table-sm table-bordered table-hover"
+  >
+    <thead>
+      <tr>
+        <th
+          onClick={[Function]}
+        >
+          User name
+          <span
+            className="sort ml-1"
+          >
+            <svg
+              aria-hidden="true"
+              className="svg-inline--fa fa-sort-alpha-down fa-w-14 "
+              data-icon="sort-alpha-down"
+              data-prefix="fas"
+              focusable="false"
+              role="img"
+              style={Object {}}
+              viewBox="0 0 448 512"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M176 352h-48V48a16 16 0 0 0-16-16H80a16 16 0 0 0-16 16v304H16c-14.19 0-21.36 17.24-11.29 27.31l80 96a16 16 0 0 0 22.62 0l80-96C197.35 369.26 190.22 352 176 352zm240-64H288a16 16 0 0 0-16 16v32a16 16 0 0 0 16 16h56l-61.26 70.45A32 32 0 0 0 272 446.37V464a16 16 0 0 0 16 16h128a16 16 0 0 0 16-16v-32a16 16 0 0 0-16-16h-56l61.26-70.45A32 32 0 0 0 432 321.63V304a16 16 0 0 0-16-16zm31.06-85.38l-59.27-160A16 16 0 0 0 372.72 32h-41.44a16 16 0 0 0-15.07 10.62l-59.27 160A16 16 0 0 0 272 224h24.83a16 16 0 0 0 15.23-11.08l4.42-12.92h71l4.41 12.92A16 16 0 0 0 407.16 224H432a16 16 0 0 0 15.06-21.38zM335.61 144L352 96l16.39 48z"
+                fill="currentColor"
+                style={Object {}}
+              />
+            </svg>
+          </span>
+        </th>
+        <th
+          onClick={[Function]}
+        >
+          Email
+          <span
+            className="sort ml-1"
+          >
+            <svg
+              aria-hidden="true"
+              className="svg-inline--fa fa-sort-alpha-down fa-w-14 "
+              data-icon="sort-alpha-down"
+              data-prefix="fas"
+              focusable="false"
+              role="img"
+              style={Object {}}
+              viewBox="0 0 448 512"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M176 352h-48V48a16 16 0 0 0-16-16H80a16 16 0 0 0-16 16v304H16c-14.19 0-21.36 17.24-11.29 27.31l80 96a16 16 0 0 0 22.62 0l80-96C197.35 369.26 190.22 352 176 352zm240-64H288a16 16 0 0 0-16 16v32a16 16 0 0 0 16 16h56l-61.26 70.45A32 32 0 0 0 272 446.37V464a16 16 0 0 0 16 16h128a16 16 0 0 0 16-16v-32a16 16 0 0 0-16-16h-56l61.26-70.45A32 32 0 0 0 432 321.63V304a16 16 0 0 0-16-16zm31.06-85.38l-59.27-160A16 16 0 0 0 372.72 32h-41.44a16 16 0 0 0-15.07 10.62l-59.27 160A16 16 0 0 0 272 224h24.83a16 16 0 0 0 15.23-11.08l4.42-12.92h71l4.41 12.92A16 16 0 0 0 407.16 224H432a16 16 0 0 0 15.06-21.38zM335.61 144L352 96l16.39 48z"
+                fill="currentColor"
+                style={Object {}}
+              />
+            </svg>
+          </span>
+        </th>
+        <th
+          onClick={[Function]}
+        >
+          Score
+          <span
+            className="sort ml-1"
+          >
+            <svg
+              aria-hidden="true"
+              className="svg-inline--fa fa-sort-alpha-down fa-w-14 "
+              data-icon="sort-alpha-down"
+              data-prefix="fas"
+              focusable="false"
+              role="img"
+              style={Object {}}
+              viewBox="0 0 448 512"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M176 352h-48V48a16 16 0 0 0-16-16H80a16 16 0 0 0-16 16v304H16c-14.19 0-21.36 17.24-11.29 27.31l80 96a16 16 0 0 0 22.62 0l80-96C197.35 369.26 190.22 352 176 352zm240-64H288a16 16 0 0 0-16 16v32a16 16 0 0 0 16 16h56l-61.26 70.45A32 32 0 0 0 272 446.37V464a16 16 0 0 0 16 16h128a16 16 0 0 0 16-16v-32a16 16 0 0 0-16-16h-56l61.26-70.45A32 32 0 0 0 432 321.63V304a16 16 0 0 0-16-16zm31.06-85.38l-59.27-160A16 16 0 0 0 372.72 32h-41.44a16 16 0 0 0-15.07 10.62l-59.27 160A16 16 0 0 0 272 224h24.83a16 16 0 0 0 15.23-11.08l4.42-12.92h71l4.41 12.92A16 16 0 0 0 407.16 224H432a16 16 0 0 0 15.06-21.38zM335.61 144L352 96l16.39 48z"
+                fill="currentColor"
+                style={Object {}}
+              />
+            </svg>
+          </span>
+        </th>
+        <th
+          onClick={[Function]}
+        >
+          Registered
+          <span
+            className="sort ml-1"
+          >
+            <svg
+              aria-hidden="true"
+              className="svg-inline--fa fa-sort-alpha-down fa-w-14 "
+              data-icon="sort-alpha-down"
+              data-prefix="fas"
+              focusable="false"
+              role="img"
+              style={Object {}}
+              viewBox="0 0 448 512"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M176 352h-48V48a16 16 0 0 0-16-16H80a16 16 0 0 0-16 16v304H16c-14.19 0-21.36 17.24-11.29 27.31l80 96a16 16 0 0 0 22.62 0l80-96C197.35 369.26 190.22 352 176 352zm240-64H288a16 16 0 0 0-16 16v32a16 16 0 0 0 16 16h56l-61.26 70.45A32 32 0 0 0 272 446.37V464a16 16 0 0 0 16 16h128a16 16 0 0 0 16-16v-32a16 16 0 0 0-16-16h-56l61.26-70.45A32 32 0 0 0 432 321.63V304a16 16 0 0 0-16-16zm31.06-85.38l-59.27-160A16 16 0 0 0 372.72 32h-41.44a16 16 0 0 0-15.07 10.62l-59.27 160A16 16 0 0 0 272 224h24.83a16 16 0 0 0 15.23-11.08l4.42-12.92h71l4.41 12.92A16 16 0 0 0 407.16 224H432a16 16 0 0 0 15.06-21.38zM335.61 144L352 96l16.39 48z"
+                fill="currentColor"
+                style={Object {}}
+              />
+            </svg>
+          </span>
+        </th>
+        <th
+          onClick={[Function]}
+        >
+          
+          <span
+            className="sort ml-1"
+          />
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td
+          className="text-center"
+          colSpan={5}
+        >
+          No Data
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+`;

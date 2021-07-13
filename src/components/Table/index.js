@@ -79,17 +79,44 @@ const TableRow = ({ data, handleEditButton, handleDeleteButton }) => {
     )
 }
 
-const Table = ({ columns, data, editAction, deleteAction }) => {
+const Table = ({ data, editAction, deleteAction }) => {
 
     const [displayedData, setDisplayedData] = useState([]);
-    const [displayedColumns, setDisplayedColumns] = useState([])
     const [isAscending, setIsAscending] = useState(true);
     const [activePage, setActivePage] = useState(1);
     const [pageItems, setPageItems] = useState([]);
     const [itemsPerPage, setItemsPerPage] = useState(5);
 
+    const columns = [
+        {
+            field: 'username',
+            label: 'User name',
+            sortable: true
+        },
+        {
+            field: 'email',
+            label: 'Email',
+            sortable: true
+        },
+        {
+            field: 'score',
+            label: 'Score',
+            sortable: true,
+            isNumber: true
+        },
+        {
+            field: 'registered',
+            label: 'Registered',
+            sortable: true
+        },
+        {
+            field: 'action',
+            label: '',
+            sortable: false
+        }
+    ]
+
     useEffect(() => {
-        setDisplayedColumns(columns);
         const pages = [];
         for (let index = 1; index <= Math.ceil(data.length / itemsPerPage); index++) {
             pages.push({
@@ -117,7 +144,7 @@ const Table = ({ columns, data, editAction, deleteAction }) => {
     const getPageData = (data) => {
         const start = (activePage - 1) * itemsPerPage;
         const end = start + itemsPerPage;
-        const pageData = [...data].slice(start, end);
+        const pageData = [...data]?.slice(start, end);
         setDisplayedData(pageData);
     }
 
@@ -138,7 +165,7 @@ const Table = ({ columns, data, editAction, deleteAction }) => {
                 <thead>
                     <tr>
                         {
-                            displayedColumns.map((c, i) => (
+                            columns.map((c, i) => (
                                 <TableHead key={i} column={c} handleHeaderClick={handleHeaderClick} isAscending={isAscending} />
                             ))
                         }
@@ -147,9 +174,9 @@ const Table = ({ columns, data, editAction, deleteAction }) => {
                 </thead>
                 <tbody>
                     {
-                        !displayedData?.length ? (
+                        !displayedData.length ? (
                             <tr>
-                                <td colSpan={displayedColumns.length} className="text-center">No Data</td>
+                                <td colSpan={columns.length} className="text-center">No Data</td>
                             </tr>
                         ) : (
                             displayedData.map((d, i) => (
@@ -160,7 +187,12 @@ const Table = ({ columns, data, editAction, deleteAction }) => {
                 </tbody>
 
             </BSTable>
-            <TablePagination paginationItems={pageItems} setActivePage={setActivePage} activePage={activePage} itemsPerPage={itemsPerPage} handleChangeItemsPerPage={handleChangeItemsPerPage} />
+            {
+                displayedData.length ? (
+                    <TablePagination paginationItems={pageItems} setActivePage={setActivePage} activePage={activePage} itemsPerPage={itemsPerPage} handleChangeItemsPerPage={handleChangeItemsPerPage} />
+                ) : null
+            }
+           
 
         </Fragment>
     )
