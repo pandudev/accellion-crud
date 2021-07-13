@@ -1,10 +1,8 @@
 import User from '../pages/User';
 import { mount, shallow } from 'enzyme';
 import React from 'react';
-import renderer from 'react-test-renderer'
 import Table from '../components/Table';
 import Modal from '../components/Modal';
-import Form from '../components/Form';
 
 const users = [
     {
