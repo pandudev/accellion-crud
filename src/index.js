@@ -4,9 +4,10 @@ import './index.css';
 import './assets/styles/Style.scss';
 import reportWebVitals from './reportWebVitals';
 import User from './pages/User';
+import App from './App';
 
 ReactDOM.render(
-    <User />,
+    <App />,
     document.getElementById('root')
 );
 
